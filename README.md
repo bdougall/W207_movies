@@ -1,6 +1,12 @@
 # W207_movies
 
-##### Table of Contents  
+## Table of Contents  
 - [Overview](#overview)  
 - [EDA Notebooks](#eda)
 - [Content Recommender Model](#content-recommender-model)
+
+### Overview
+
+### EDA Notebooks
+
+### Content Recommender Model
