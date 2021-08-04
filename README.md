@@ -6,7 +6,7 @@
 - [Content Recommender Model Notebooks](#content-recommender-model-notebooks)
     - [Data Pre-Processing Notebooks](#content-processing-notebooks)
     - [Model Notebook](#content-model-notebook)
-- [Order to Run Content Recommender Model Notebooks](#content-notebook-order)
+- [Content Notebook Order and Instructions](#content-notebook-order)
 
 ## Overview <a name="overview"></a>
 In our project, we seek to evaluate the hit rate of two common recommender models, a content-based recommender model and a collaborative filtering recommender model.
@@ -34,8 +34,7 @@ Add Imdb field into the ratings.csv file to enable filtering of both ratings.csv
 
 Convert all movies_final columns to numeric form for classifier testing and drop unneeded columns, and convert the dataframe to a CSR sparse matrix. Evaluate a baseline classifier that assigns a random probability to each label and the following classifiers (Cosine Similarity, Bernoulli Naive Bayes, Random Forest, SVM, K-Nearest Neighbors, Logistic Regression, Gaussian Mixture Model, Ensemble Model) on a random sample of the dev set and compare the positive case hit rates and f1 scores. For the Bernoulli Naive Bayes, Random Forest, SVM, K-Nearest Neighbors, Logistic Regression, Gaussian Mixture Models, iterate over common parameters to test changes in positive case hit rate and f1-score. For the classifier with the highest positive case hit rate, keep the parameters for which it received its highest f1-score, and evaluate positive case hit rate, f1-score, and novelty score on a random sample of test users and ratings.
 
-## Order and Instructions for Running Content Recommender Model Notebooks 
-<a name="#content-notebook-order"></a>
+## Content Notebook Order and Instructions <a name="#content-notebook-order"></a>
 
 1. credits_keywords_processing.ipynb
 
