@@ -6,7 +6,7 @@
 - [Content Recommender Model Notebooks](#content-recommender-model-notebooks)
     - [Data Pre-Processing Notebooks](#content-processing-notebooks)
     - [Model Notebook](#content-model-notebook)
-- [Order to Run Content Recommender Model Notebooks](#content-recommender-notebook-order)
+- [Order to Run Content Recommender Model Notebooks](#content-notebook-order)
 
 ## Overview <a name="overview"></a>
 In our project, we seek to evaluate the hit rate of two common recommender models, a content-based recommender model and a collaborative filtering recommender model.
@@ -29,12 +29,12 @@ Clean the original columns in the movies_metadata.csv file and add in the extrac
 
 Add Imdb field into the ratings.csv file to enable filtering of both ratings.csv and movies_temp.csv, binarize ratings (convert sores <4 to 0 and scores >= 4 to 1), drop movies in both ratings.csv and movies_temp.csv that are not in the other dataset, and filter ratings.csv to only include ratings from users who provided 30 or more ratings. Split this filtered ratings.csv file into the following files: test (the  most recent rating for filtered users), dev (the second-to-last rating for filtered users), and train (all remaining ratings for filtered users). Write the test, dev, and train dataframes to new csv files. Write the filtered dataframe of movies_temp to a new csv file, movies_final.csv.
 
-### Model Notebook
+### Model Notebook <a name="content-model-notebook"></a>
 #### content_based.ipynb
 
 Convert all movies_final columns to numeric form for classifier testing and drop unneeded columns, and convert the dataframe to a CSR sparse matrix. Evaluate a baseline classifier that assigns a random probability to each label and the following classifiers (Cosine Similarity, Bernoulli Naive Bayes, Random Forest, SVM, K-Nearest Neighbors, Logistic Regression, Gaussian Mixture Model, Ensemble Model) on a random sample of the dev set and compare the positive case hit rates and f1 scores. For the Bernoulli Naive Bayes, Random Forest, SVM, K-Nearest Neighbors, Logistic Regression, Gaussian Mixture Models, iterate over common parameters to test changes in positive case hit rate and f1-score. For the classifier with the highest positive case hit rate, keep the parameters for which it received its highest f1-score, and evaluate positive case hit rate, f1-score, and novelty score on a random sample of test users and ratings.
 
-## Order and Instructions for Running Content Recommender Model Notebooks
+## Order and Instructions for Running Content Recommender Model Notebooks <a name="#content-notebook-order"></a>
 
 1. credits_keywords_processing.ipynb
 
