@@ -16,8 +16,8 @@
 In our project, we seek to evaluate the hit rate of two common recommender models, a content-based recommender model and a collaborative filtering recommender model, and determine the extent to which we can improve recommendation diversity without impacting hit rate performance.
 
 ## EDA Notebooks <a name="eda"></a>
-1. movies_eda.ipynb
-2. ratings_eda.ipynb
+1. `movies_eda.ipynb`
+2. `ratings_eda.ipynb`
 
 ## Content Recommender Model Notebooks <a name="content-recommender-model-notebooks"></a>
 ### Data Pre-Processing Notebooks <a name="content-processing-notebooks"></a>
