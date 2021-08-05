@@ -2,6 +2,7 @@
 
 ## Table of Contents  
 - [Overview](#overview)  
+- [Presentation of Findings](#presentation)
 - [EDA Notebooks](#eda)
 - [Content Recommender Model Notebooks](#content-recommender-model-notebooks)
     - [Data Pre-Processing Notebooks](#content-processing-notebooks)
@@ -15,8 +16,8 @@
 ## Overview <a name="overview"></a>
 In our project, we seek to evaluate the hit rate of two common recommender models, a content-based recommender model and a collaborative filtering recommender model, and determine the extent to which we can improve recommendation diversity without impacting hit rate performance.
 
-## Presentation of Findings
-To see a high level overview of our findings from this project, please go to the [google slides presentation](https://docs.google.com/presentation/d/1wnjcNVmgHpEsXDjuEb8vYlUkA6FpskAOi-otwyW32k8/edit?usp=sharing).
+## Presentation of Findings <a name="presentation"></a>
+To see a high level overview of our findings from this project, please go to the [Google Slides Presentation](https://docs.google.com/presentation/d/1wnjcNVmgHpEsXDjuEb8vYlUkA6FpskAOi-otwyW32k8/edit?usp=sharing).
 
 ## EDA Notebooks <a name="eda"></a>
 1. `movies_eda.ipynb`
